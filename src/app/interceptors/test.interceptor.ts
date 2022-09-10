@@ -15,7 +15,7 @@ export class TestInterceptor implements HttpInterceptor {
     request: HttpRequest<unknown>,
     next: HttpHandler
   ): Observable<HttpEvent<unknown>> {
-    console.log('intercepting');
+    console.log('interceptor works');
 
     return next.handle(request);
   }

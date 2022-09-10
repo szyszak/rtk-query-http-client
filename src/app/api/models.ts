@@ -1,4 +1,4 @@
-export interface UsersResponse {
+export interface User {
   id: number;
   name: string;
   username: string;
@@ -21,3 +21,5 @@ export interface UsersResponse {
     bs: string;
   };
 }
+
+export type UsersResponse = User[];

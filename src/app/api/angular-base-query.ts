@@ -1,4 +1,4 @@
-import { HttpClient, HttpParams } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import type { BaseQueryFn } from '@reduxjs/toolkit/query';
 import { lastValueFrom } from 'rxjs';
 import { InjectorInstance } from '../app.module';
@@ -11,7 +11,7 @@ export const angularBaseQuery =
       url: string;
       method?: string;
       data?: any;
-      params?: HttpParams;
+      params?: any;
     },
     unknown,
     unknown
